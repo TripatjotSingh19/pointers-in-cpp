@@ -19,41 +19,43 @@ To understand and implement pointer operations in C++, including:
 
 # 1. Introduction to Pointers
 
-Pointers are variables that store memory addresses rather than values. They enable:
-
-Direct memory access for efficient data manipulation
-
-Dynamic memory allocation using new and delete
-
-Array traversal through pointer arithmetic
-
-String operations without index variables
-
-Passing arguments by reference to functions
+        Pointers are variables that store memory addresses rather than values. They enable:
+        
+        Direct memory access for efficient data manipulation
+        
+        Dynamic memory allocation using new and delete
+        
+        Array traversal through pointer arithmetic
+        
+        String operations without index variables
+        
+        Passing arguments by reference to functions
 
 # 2. Key Pointer Concepts
 
 Pointer Arithmetic
 
-Addition/Subtraction: Works with the size of the data type
-cpp
+        Addition/Subtraction: Works with the size of the data type
+        cpp
+        
+        int *ptr; 
+        ptr++;  // Moves 4 bytes ahead (for 32-bit int)
 
-int *ptr; 
-ptr++;  // Moves 4 bytes ahead (for 32-bit int)
+        Comparison: Can compare addresses (>, <, ==)
 
-Comparison: Can compare addresses (>, <, ==)
 Pointers vs Arrays
 
-Array names are constant pointers to first elements
+        Array names are constant pointers to first elements
 
-Pointer notation (*(arr+i)) is equivalent to array notation (arr[i])
+        Pointer notation (*(arr+i)) is equivalent to array notation (arr[i])
+
 Pointer Safety
 
-Always initialize pointers (int *ptr = nullptr;)
+        Always initialize pointers (int *ptr = nullptr;)
 
-Check for nullptr before dereferencing
+        Check for nullptr before dereferencing
 
-Avoid dangling pointers (pointers to deleted memory)
+        Avoid dangling pointers (pointers to deleted memory)
 
 # 3. Practical Applications
     String Manipulation: Pointers efficiently traverse C-style strings
