@@ -103,11 +103,11 @@ Pointer Safety
 
 4. String Display (pointer_string_disp.cpp)
 
-    Declare a string a[10] = "Tripatjot"
-
-    Initialize pointer aptr = &a[0]
-
-    Traverse string using aptr++ and print characters
+            Declare a string a[10] = "Tripatjot"
+        
+            Initialize pointer aptr = &a[0]
+        
+            Traverse string using aptr++ and print characters
 
 5.Palindrome Check (pointer_palindrome.cpp)
 
